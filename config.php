@@ -4,9 +4,14 @@ ob_start();
 
 try {
 
+$cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server   = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+
 //"root" in place of username, "" in place of password
 
-$con = new PDO("mysql:dbname=poodle;host=localhost", "root", "");
+$con = new PDO("mysql:dbname=poodle;host=".$cleardb_server, $cleardb_username, $cleardb_password);
 $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 }
