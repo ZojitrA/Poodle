@@ -36,19 +36,19 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 	<div class="wrapper">
 
 		<div class="header">
-			
+
 			<div class="headerContent">
 
 				<div class="logoContainer">
-					<a href="index.php">	
+					<a href="index.php">
 						<img src="assets/images/poodle.png">
 					</a>
 				</div>
 
 				<div class="searchContainer">
-					
+
 					<form action="search.php" method="GET">
-						
+
 						<div class="searchBarContainer">
 							<input type="hidden" name="type" value="<?php echo $type; ?>">
 							<input class="searchBox"type="text" name="term" value="<?php echo $term?>">
@@ -64,10 +64,10 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 			</div>
 
 			<div class="tabsContainer">
-				
+
 				<ul class="tabList">
 
-					<li class="<?php echo $type == 'sites' ? 'active' : '';?>">		
+					<li class="<?php echo $type == 'sites' ? 'active' : '';?>">
 						<a href='<?php echo "search.php?term=$term&type=sites";?>'>
 							All
 						</a>
@@ -76,24 +76,14 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 					<li class="<?php echo $type == 'images' ? 'active' : ''; ?>">
 						<a href='<?php echo "search.php?term=$term&type=images";?>'>
 							Images
-						</a>	
-					</li>
-
-					<li class="<?php echo $type == 'news' ? 'active' : '' ;?>">				
-						<a href='<?php echo "search.php?term=$term&type=news";?>'>
-							News
 						</a>
 					</li>
 
-					<li class="<?php echo $type == 'videos' ? 'active' : ''; ?>">
-						<a href='<?php echo "search.php?term=$term&type=videos";?>'>
-							Videos
-						</a>
-					</li>
+				
 
 
-					
-					
+
+
 				</ul>
 
 			</div>
@@ -110,7 +100,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 	 		$resultsProvider = new ImageResultsProvider($con);
 	 		$pageLimit = 40;
 	 	}
-	 	
+
 	 	$numResults = $resultsProvider->getNumResults($term);
 
 	 	echo "<p class='resultsCount'>$numResults results found</p>";
@@ -147,7 +137,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 		 	while($pagesLeft != 0 && $currentPage <= $numPages){
 
 		 		if($currentPage == $page){
-		 			
+
 		 		echo "<div class='pageNumberHolder'>
 		 			<img src='assets/images/pageSelected.png'>
 		 			<span class='pageNumber'>$currentPage</span>
@@ -172,7 +162,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 		 	</div>
 	 	</div>
 
-	 	
+
 
 	 </div>
 

@@ -5,7 +5,7 @@
 	<title>Welcome to Poodle</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
+	<link rel="icon" href="favicon.ico" type="assets/images/pageStart.png" />
 </head>
 <body>
 
@@ -18,10 +18,10 @@
 			</div>
 
 			<div class="searchContainer">
-				
+
 				<form action="search.php" method="GET">
 					<input class="searchBox" type="text" name="term">
-					<input class="searchButton" type="submit" value="Poodle Search">	
+					<input class="searchButton" type="submit" value="Poodle Search">
 				</form>
 
 			</div>
