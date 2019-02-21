@@ -26,6 +26,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 	<title>Welcome to Poodle</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="assets/images/pageSelected.png" type="image/png" />
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -79,7 +80,7 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 						</a>
 					</li>
 
-				
+
 
 
 

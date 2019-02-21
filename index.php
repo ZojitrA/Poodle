@@ -5,7 +5,7 @@
 	<title>Welcome to Poodle</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="icon" href="assets/images/pageStart.png" type="image/png" />
+	<link rel="icon" href="assets/images/page.png" type="image/png" />
 </head>
 <body>
 
